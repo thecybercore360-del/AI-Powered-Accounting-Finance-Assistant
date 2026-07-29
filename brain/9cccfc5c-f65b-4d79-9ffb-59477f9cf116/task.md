@@ -1,0 +1,5 @@
+- `[x]` Create `backend/schemas/reports.py`
+- `[x]` Create `backend/crud/reports.py`
+- `[x]` Create `backend/api/reports.py`
+- `[x]` Update `backend/main.py`
+- `[ ]` Commit changes to `feature/financial-reports`
