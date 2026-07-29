@@ -32,3 +32,4 @@ app.include_router(anomaly.router, prefix="/api/v1", tags=["AI Audit"])
 def read_root():
     return {"message": "Welcome to AI-Powered Accounting & Finance Assistant API"}
 
+

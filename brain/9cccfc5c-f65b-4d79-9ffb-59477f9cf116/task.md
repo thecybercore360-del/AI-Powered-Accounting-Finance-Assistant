@@ -4,4 +4,7 @@
 - `[x]` Create `backend/agent/graph.py`
 - `[x]` Create `backend/api/chat.py`
 - `[x]` Update `backend/main.py`
-- `[ ]` Commit changes to `feature/ai-agent`
+- `[x]` Create `backend/schemas/reports.py`
+- `[x]` Create `backend/crud/reports.py`
+- `[x]` Create `backend/api/reports.py`
+- `[x]` Commit changes
