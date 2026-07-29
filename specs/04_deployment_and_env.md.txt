@@ -1,0 +1,11 @@
+# Spec 04: Environment Configuration
+
+# Database (Supabase PostgreSQL)
+DATABASE_URL=postgresql+asyncpg://postgres:[PASSWORD]@db.[REF].supabase.co:5432/postgres
+
+# AI Provider API Keys
+GROQ_API_KEY=your_google_ai_studio_api_key
+
+# App Configuration
+ENVIRONMENT=production
+CORS_ORIGINS=https://your-app.vercel.app,http://localhost:3000

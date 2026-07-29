@@ -1,0 +1,19 @@
+# Spec 01: System Overview & Architecture
+
+## 1. Project Goal
+An AI-Powered Accounting & Finance Assistant that automates day-to-day bookkeeping, financial reporting (P&L, Balance Sheet), double-entry ledger posting, and monthly auditing.
+
+## 2. Tech Stack Specification (Section 3)
+- **Frontend**: Next.js 14+ (App Router), TypeScript, Tailwind CSS.
+- **Backend**: FastAPI (Python), Asynchronous Endpoints.
+- **Data Validation**: Pydantic V2.
+- **Database**: PostgreSQL (Supabase), SQLAlchemy Async ORM.
+- **AI Agentic Engine**: LangGraph + Groq Cloud API (Llama-3-70B/8B)
+- **Infrastructure**: Docker, Vercel (Frontend), Railway (Backend).
+
+## 3. System Architecture Flow
+[User Interface (Next.js)] 
+   -> HTTP / REST API (JSON) -> [FastAPI Backend] 
+   -> Agent Orchestration -> [LangGraph + Gemini]
+   -> Tool Execution -> [Pydantic Validation] 
+   -> Executed SQL Query -> [PostgreSQL Database]

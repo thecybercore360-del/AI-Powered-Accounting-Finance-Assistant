@@ -1,0 +1,21 @@
+# Spec 02: Detailed Features & Test-Driven Development (TDD) Matrix
+
+## Feature 1: Natural Language Data Entry
+- **Description**: User types a natural prompt (e.g., "Paid 50,000 Rs for office rent").
+- **Expected Behavior**: AI extracts parameters, validates via Pydantic, and records a double-entry item.
+- **TDD Test Case**: Pass "Added 2000 Rs internet bill" -> Expect HTTP 201, DB records Debit: Internet (2000), Credit: Cash (2000).
+
+## Feature 2: Double-Entry Accounting Engine
+- **Description**: Ensures every transaction creates balanced Debit and Credit lines.
+- **Constraint**: `SUM(Debits) == SUM(Credits)`.
+
+## Feature 3: Real-Time Profit & Loss (P&L)
+- **Description**: Calculates Total Revenue, Expenses, and Net Profit dynamically.
+- **TDD Test Case**: Insert dummy Income (100k) and Expenses (40k) -> Assert `net_profit == 60000`.
+
+## Feature 4: Balance Sheet Generator
+- **Description**: Fetches Assets, Liabilities, and Equity balances.
+- **Constraint**: `Assets = Liabilities + Equity`.
+
+## Feature 5: Monthly AI Anomaly Audit
+- **Description**: Scans transactions of a selected month to detect unusual spikes or duplicate entries.
