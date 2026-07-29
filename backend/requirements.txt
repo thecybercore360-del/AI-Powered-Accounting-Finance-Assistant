@@ -6,3 +6,6 @@ pydantic
 pydantic-settings
 python-dotenv
 greenlet
+langgraph
+langchain-groq
+langchain-core
