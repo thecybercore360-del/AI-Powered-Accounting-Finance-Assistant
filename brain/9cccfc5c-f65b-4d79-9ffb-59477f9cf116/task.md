@@ -1,0 +1,3 @@
+- `[x]` Create `backend/crud/accounting.py` for double-entry logic
+- `[x]` Update `backend/api/transactions.py` to use the new logic
+- `[ ]` Wait for database configuration (Supabase/PostgreSQL) to run end-to-end tests
