@@ -1,3 +1,7 @@
-- `[x]` Create `backend/crud/accounting.py` for double-entry logic
-- `[x]` Update `backend/api/transactions.py` to use the new logic
-- `[ ]` Wait for database configuration (Supabase/PostgreSQL) to run end-to-end tests
+- `[x]` Create and switch to `feature/ai-agent` branch
+- `[x]` Update `backend/requirements.txt`
+- `[x]` Create `backend/agent/tools.py`
+- `[x]` Create `backend/agent/graph.py`
+- `[x]` Create `backend/api/chat.py`
+- `[x]` Update `backend/main.py`
+- `[ ]` Commit changes to `feature/ai-agent`
