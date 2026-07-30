@@ -4,7 +4,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       - GROQ_API_KEY=${GROQ_API_KEY}
       - DATABASE_URL=postgresql+asyncpg://postgres:securepassword123@db:5432/ai_accounting
@@ -30,7 +30,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=admin@cybercore.com
       - PGADMIN_DEFAULT_PASSWORD=adminpassword
     ports:
-      - "5050:80"
+      - "5051:80"
     depends_on:
       - db
     restart: unless-stopped
